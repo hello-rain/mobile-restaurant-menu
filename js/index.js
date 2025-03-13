@@ -1,6 +1,5 @@
 import menuArray from "../data.js";
 
-
 // Cart array to store selected menu items
 let cart = [];
 
@@ -20,7 +19,7 @@ function renderMenu() {
     menuItem.setAttribute("data-id", item.id);
 
     const menuItemImg = document.createElement("img");
-    menuItemImg.src = `images/${item.name.toLowerCase()}.png`;
+    menuItemImg.src = `./images/${item.name.toLowerCase()}.png`;
     menuItemImg.alt = item.name;
 
     const menuItemInfo = document.createElement("div");
