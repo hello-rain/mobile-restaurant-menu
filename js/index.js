@@ -18,8 +18,9 @@ function renderMenu() {
     menuItem.classList.add("menu__item");
     menuItem.setAttribute("data-id", item.id);
 
-    const menuItemImg = document.createElement("img");
-    menuItemImg.src = `./static/images/${item.name.toLowerCase()}.png`;
+    let menuItemImg = document.createElement("img");
+    menuItemImg.src = `./static/images/${item.name}.png`;
+    console.log(menuItemImg.src)
     menuItemImg.alt = item.name;
 
     const menuItemInfo = document.createElement("div");
