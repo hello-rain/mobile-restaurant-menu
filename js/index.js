@@ -19,7 +19,8 @@ function renderMenu() {
     menuItem.setAttribute("data-id", item.id);
 
     let menuItemImg = document.createElement("img");
-    menuItemImg.src = `/static/images/${item.name}.png`;
+    const baseUrl = new URL('..', import.meta.url).href;
+    menuItemImg.src = `${baseUrl}/static/images/${item.name}.png`;
     console.log(menuItemImg.src)
     menuItemImg.alt = item.name;
 
