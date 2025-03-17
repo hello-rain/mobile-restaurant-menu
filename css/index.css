@@ -72,7 +72,7 @@ ol {
 }
 
 header .container {
-  background-image: url("https://mobile-diner-menu.netlify.app/static/images/jimmys-diner.png");
+  background-image: url("../static/images/jimmys-diner.png");
   height: 167px;
   display: flex;
   flex-direction: column;
