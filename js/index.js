@@ -19,9 +19,11 @@ function renderMenu() {
     menuItem.setAttribute("data-id", item.id);
 
     let menuItemImg = document.createElement("img");
-    const baseUrl = new URL('..', import.meta.url).href;
-    menuItemImg.src = `${baseUrl}/static/images/${item.name}.png`;
-    console.log(menuItemImg.src)
+    // const baseUrl = new URL('..', import.meta.url).href;
+    menuItemImg.src = `./build/images/${item.name.toLowerCase()}.png`;
+    // I should be back in not time :)
+    // I'll be waiting!
+    console.log(menuItemImg.src);
     menuItemImg.alt = item.name;
 
     const menuItemInfo = document.createElement("div");
@@ -29,7 +31,7 @@ function renderMenu() {
 
     const menuItemTitle = document.createElement("h3");
     menuItemTitle.classList.add("menu__item-title");
-    menuItemTitle.textContent = item.name.toUpperCase();
+    menuItemTitle.textContent = item.name;
 
     const menuItemIngredients = document.createElement("span");
     menuItemIngredients.classList.add("menu__item-ingredients");

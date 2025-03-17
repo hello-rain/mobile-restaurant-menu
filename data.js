@@ -1,18 +1,18 @@
 const menuArray = [
     {
-        name: "pizza",
+        name: "Pizza",
         ingredients: ["pepperoni", "mushrom", "mozarella"],
         id: 0,
         price: 14,
     },
     {
-        name: "hamburger",
+        name: "Hamburger",
         ingredients: ["beef", "cheese", "lettuce"],
         price: 12,
         id: 1,
     },
     {
-        name: "beer",
+        name: "Beer",
         ingredients: ["grain, hops, yeast, water"],
         price: 12,
         id: 2,
