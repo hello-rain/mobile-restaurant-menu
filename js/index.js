@@ -19,7 +19,7 @@ function renderMenu() {
     menuItem.setAttribute("data-id", item.id);
 
     let menuItemImg = document.createElement("img");
-    menuItemImg.src = `./static/images/${item.name.toUpperCase()}.png`;
+    menuItemImg.src = `./static/images/${item.name}.png`;
     console.log(menuItemImg.src)
     menuItemImg.alt = item.name;
 
@@ -28,7 +28,7 @@ function renderMenu() {
 
     const menuItemTitle = document.createElement("h3");
     menuItemTitle.classList.add("menu__item-title");
-    menuItemTitle.textContent = item.name;
+    menuItemTitle.textContent = item.name.toUpperCase();
 
     const menuItemIngredients = document.createElement("span");
     menuItemIngredients.classList.add("menu__item-ingredients");
